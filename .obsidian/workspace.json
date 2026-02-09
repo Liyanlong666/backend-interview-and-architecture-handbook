@@ -189,13 +189,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "308b839031f07522",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "sparkles",
+              "title": "Agent Mode"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 385.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,11 +216,16 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false
     }
   },
-  "active": "7a9120d070469cff",
+  "active": "308b839031f07522",
   "lastOpenFiles": [
+    "gemini-scribe/Agent-Sessions",
+    "gemini-scribe/Prompts/example-expert.md",
+    "gemini-scribe/Prompts",
+    "gemini-scribe",
     "README.md",
     "GEMINI.md",
     "Clippings/Gemini CLI 会话管理：自动保存和恢复你的 AI 对话上下文.md",
@@ -247,15 +262,11 @@
     "JAVA/algorithm-go/让我们一起刷算法",
     "JAVA/algorithm-go",
     "JAVA/kafka/kafka.assert",
-    "JAVA/kafka",
     "JAVA/非算法类 手撕/非算法类 手撕.md",
-    "八股文/计算机网络/HTTP/HTTPS-牛客面经八股",
     "JAVA/八股文/Redis/缓存三件套/缓存三件套.md",
     "JAVA/八股文/Redis/持久化/持久化.md",
     "JAVA/八股文/Redis/分布式锁常见实现方案总结  JavaGuide/分布式锁常见实现方案总结  JavaGuide.md",
     "JAVA/八股文/Redis/底层结构/底层结构.md",
-    "JAVA/八股文/Redis/Redis 分布式锁/Redis 分布式锁.md",
-    "JAVA/八股文/MySQL/锁/锁.md",
-    "JAVA/八股文/MySQL/索引/索引.md"
+    "JAVA/八股文/Redis/Redis 分布式锁/Redis 分布式锁.md"
   ]
 }
