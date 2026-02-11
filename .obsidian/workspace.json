@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
+                "file": "JAVA/八股文/MySQL/0-MySQL面试核心.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "事务&日志"
+              "title": "0-MySQL面试核心"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
+                "file": "JAVA/八股文/MySQL/0-MySQL面试核心.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "事务&日志 的大纲"
+              "title": "0-MySQL面试核心 的大纲"
             }
           },
           {
@@ -196,10 +196,13 @@
   },
   "active": "f9b1b9b91e1b9ed4",
   "lastOpenFiles": [
-    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
-    "JAVA/八股文/MySQL/_整理进度报告.md",
-    "JAVA/八股文/MySQL/_原笔记备份/MySQL.md.bak",
     "JAVA/八股文/MySQL/MySQL.md",
+    "JAVA/八股文/MySQL/_整理进度报告.md",
+    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
+    "JAVA/八股文/MySQL/索引/索引.md",
+    "JAVA/八股文/MySQL/_原笔记备份/索引.md",
+    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
+    "JAVA/八股文/MySQL/_原笔记备份/MySQL.md.bak",
     "JAVA/八股文/MySQL/事务&日志/事务&日志.md",
     "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
     "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
@@ -221,11 +224,9 @@
     "JAVA/八股文/计算机网络/1-网络分层模型.md",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.md",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert",
-    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
     "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert",
     "JAVA/八股文/MySQL/_原笔记备份/锁.md",
     "JAVA/八股文/MySQL/_原笔记备份/锁.assert",
-    "JAVA/八股文/MySQL/_原笔记备份/索引.md",
     "JAVA/八股文/MySQL/_原笔记备份/索引.assert",
     "JAVA/八股文/MySQL/_原笔记备份/MySQL.md",
     "JAVA/八股文/MySQL/_原笔记备份",
