@@ -31,7 +31,7 @@ TCP 是面向连接、可靠、基于字节流的传输层协议
 
 ### 📊 TCP 头部格式
 
-![TCP 头部格式](https://cdn.nlark.com/yuque/0/2025/webp/49518801/1747734216552-240166b8-d5f8-4f22-9422-4f3827fe6970.webp)
+![TCP 头部格式](.assert/4-TCP协议详解/tcp-header.webp)
 
 **重点字段**:
 
@@ -82,7 +82,7 @@ SYN → SYN+ACK → ACK，建立可靠双向连接
 
 ### 📊 握手流程图
 
-![TCP 三次握手](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090119305-077e9c4e-d26a-437f-8df1-3900163e2a05.jpg.jpeg)
+![TCP 三次握手](.assert/4-TCP协议详解/tcp-handshake.jpg)
 
 ### 📝 详细步骤
 
@@ -152,7 +152,7 @@ Acknowledgment Number: server_isn + 1
 
 #### 泡妞版 💘
 
-![大白话三次握手](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090119875-a2fa8722-4020-4c4d-a609-049c28bcb886.jpg.jpeg)
+![大白话三次握手](.assert/4-TCP协议详解/tcp-handshake-analogy.jpg)
 
 你（客户端）在一个拥挤的聚会上遇到了你想交谈的美女（服务器）。因为周围很吵，你们需要确认对方都准备好交流。
 
@@ -282,7 +282,7 @@ FIN → ACK → FIN → ACK，优雅断开双向连接
 
 ### 📊 挥手流程图
 
-![TCP 四次挥手](https://cdn.nlark.com/yuque/0/2025/webp/49518801/1747734219350-ac49e917-ee58-4a60-b934-c160383ddf05.webp)
+![TCP 四次挥手](.assert/4-TCP协议详解/tcp-wave.webp)
 
 ### 📝 详细步骤
 
@@ -485,7 +485,7 @@ try (Socket socket = serverSocket.accept()) {
 
 ### 📊 完整状态机
 
-![TCP 状态机](https://cdn.nlark.com/yuque/0/2025/webp/49518801/1747734219186-ba0a2f24-fc7a-4b55-b099-6461713dd96d.webp)
+![TCP 状态机](.assert/4-TCP协议详解/tcp-state-machine.webp)
 
 ### 📝 状态说明
 
