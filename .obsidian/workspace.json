@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "2-HTTP协议"
             }
-          },
-          {
-            "id": "fa83899ca1470dab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/八股文/计算机网络/1-网络分层模型.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1-网络分层模型"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/八股文/计算机网络/1-网络分层模型.md",
+                "file": "JAVA/八股文/计算机网络/2-HTTP协议.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1-网络分层模型 的大纲"
+              "title": "2-HTTP协议 的大纲"
             }
           },
           {
@@ -209,32 +194,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fa83899ca1470dab",
+  "active": "f9b1b9b91e1b9ed4",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/_整理进度报告.md",
+    "JAVA/八股文/计算机网络/1-网络分层模型.md",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.md",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106256390-a77c8975-8abf-4bd4-89cc-727abea18aeb.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106255974-b62c6fda-87c6-4242-af15-95cc7befcecf.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106255683-79932170-ddb5-44ef-9371-2fa5f4b25969.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106255482-349f08d0-c16b-45de-bad8-7e930a98b9cb.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106255428-50051ea3-b977-47c6-a8ca-c185a9070ca8.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106255350-1ed0d03d-07cf-43c7-8944-05d8a1350016.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert/1756106255229-dec7706d-1b17-4c3e-8b39-490ba2db3df9.png",
+    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert",
+    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
+    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert/1752630602579-915a76a9-2b14-414d-bbb2-26a245514581.png",
+    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert/1752630601854-fe5b831f-6291-4fa6-9962-675dd7b54556.png",
+    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert/1752630601816-51e382b6-da6d-438f-83b8-fb0d00e298d9.png",
+    "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert",
+    "JAVA/八股文/MySQL/_原笔记备份/锁.md",
+    "JAVA/八股文/MySQL/_原笔记备份/锁.assert",
+    "JAVA/八股文/MySQL/_原笔记备份/索引.md",
+    "JAVA/八股文/MySQL/_原笔记备份/索引.assert",
+    "JAVA/八股文/MySQL/_原笔记备份/MySQL.md",
+    "JAVA/八股文/MySQL/_原笔记备份",
+    "JAVA/八股文/MySQL/assets/6-常见问题与实战",
+    "JAVA/八股文/MySQL/assets/5-SQL优化",
+    "JAVA/八股文/MySQL/assets/4-锁机制",
+    "JAVA/八股文/MySQL/assets/3-事务与日志",
+    "JAVA/八股文/MySQL/assets/2-索引详解",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
+    "JAVA/八股文/计算机网络/_离线图片配置完成.md",
+    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
+    "JAVA/八股文/计算机网络/_方案B完成报告.md",
     "JAVA/八股文/计算机网络/计算机网络.md",
     "JAVA/八股文/计算机网络/5-常见问题与实战.md",
-    "JAVA/八股文/计算机网络/_方案B完成报告.md",
     "README.md",
-    "JAVA/八股文/计算机网络/1-网络分层模型.md",
-    "JAVA/八股文/计算机网络/_离线图片配置完成.md",
     "JAVA/八股文/计算机网络/3-HTTPS与加密.md",
-    "JAVA/八股文/计算机网络/assets/5-常见问题与实战/wireshark.png",
-    "JAVA/八股文/计算机网络/assets/5-常见问题与实战/chrome-devtools.png",
-    "JAVA/八股文/计算机网络/assets/4-TCP协议详解/tcp-wave.webp",
-    "JAVA/八股文/计算机网络/assets/4-TCP协议详解/tcp-state-machine.webp",
-    "JAVA/八股文/计算机网络/assets/4-TCP协议详解/tcp-header.webp",
-    "JAVA/八股文/计算机网络/assets/4-TCP协议详解/tcp-handshake.jpg",
-    "JAVA/八股文/计算机网络/assets/4-TCP协议详解/tcp-handshake-analogy.jpg",
-    "JAVA/八股文/计算机网络/assets/3-HTTPS与加密/tls-handshake.png",
-    "JAVA/八股文/计算机网络/assets/3-HTTPS与加密/certificate-verify.jpg",
-    "JAVA/八股文/计算机网络/assets/2-HTTP协议/session-workflow.jpg",
-    "JAVA/八股文/计算机网络/assets/5-常见问题与实战",
-    "JAVA/八股文/计算机网络/assets/4-TCP协议详解",
-    "JAVA/八股文/计算机网络/assets/3-HTTPS与加密",
-    "JAVA/八股文/计算机网络/assets/2-HTTP协议",
-    "JAVA/八股文/计算机网络/assets/1-网络分层模型",
-    "JAVA/八股文/计算机网络/assets",
     "JAVA/八股文/计算机网络/2-HTTP协议.md",
     "GEMINI.md",
     "JAVA/八股文/计算机网络/4-TCP协议详解.md",
@@ -242,20 +238,9 @@
     "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
     "JAVA/八股文/MySQL/事务&日志/事务&日志.md",
     "Clippings/Gemini CLI 会话管理：自动保存和恢复你的 AI 对话上下文.md",
-    "gemini-scribe/Agent-Sessions",
     "gemini-scribe/Prompts/example-expert.md",
-    "gemini-scribe/Prompts",
-    "gemini-scribe",
-    "Clippings",
     "JAVA/八股文/JUC面试题/并发工具类/并发工具类.md",
     "JAVA/kafka/kafka.md",
-    "JAVA/时序数据库InfluxDB/InfluxDB_5_选型对比与架构演进.md",
-    "JAVA/时序数据库InfluxDB/InfluxDB_2_TSM存储引擎深度解析.md",
-    "JAVA/时序数据库InfluxDB/InfluxDB_1_核心概念与数据模型.md",
-    "JAVA/时序数据库InfluxDB/InfluxDB_4_合并机制与性能测试.md",
-    "JAVA/时序数据库InfluxDB/InfluxDB_3_时序压缩算法详解.md",
-    "JAVA/时序数据库InfluxDB/InfluxDB TSM存储引擎之TSMFile.md",
-    "JAVA/时序数据库InfluxDB/内存索引和时间结构合并树（TSM）.md",
-    "JAVA/八股文/JUC面试题/锁/锁.md"
+    "JAVA/时序数据库InfluxDB/InfluxDB_5_选型对比与架构演进.md"
   ]
 }
