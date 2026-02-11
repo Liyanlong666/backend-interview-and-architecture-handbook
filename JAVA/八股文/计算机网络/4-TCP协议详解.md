@@ -31,23 +31,7 @@ TCP 是面向连接、可靠、基于字节流的传输层协议
 
 ### 📊 TCP 头部格式
 
-```
- 0                   1                   2                   3
- 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|          Source Port          |       Destination Port        |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|                        Sequence Number                        |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|                    Acknowledgment Number                      |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|  Data |       |C|E|U|A|P|R|S|F|                               |
-| Offset| Rsrvd |W|C|R|C|S|S|Y|I|            Window             |
-|       |       |R|E|G|K|H|T|N|N|                               |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|           Checksum            |         Urgent Pointer        |
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-```
+![TCP 头部格式](https://cdn.nlark.com/yuque/0/2025/webp/49518801/1747734216552-240166b8-d5f8-4f22-9422-4f3827fe6970.webp)
 
 **重点字段**:
 
@@ -98,29 +82,7 @@ SYN → SYN+ACK → ACK，建立可靠双向连接
 
 ### 📊 握手流程图
 
-```
-客户端                                服务端
-CLOSED                                CLOSED
-  |                                      |
-  |                                      ↓
-  |                                   LISTEN
-  |                                      |
-  |--- ① SYN (seq=x) ------------------>|
-  |    [SYN_SENT]                        |
-  |                                      ↓
-  |                                 [SYN_RCVD]
-  |                                      |
-  |<-- ② SYN+ACK (seq=y, ack=x+1) ------|
-  |                                      |
-  ↓                                      |
-[ESTABLISHED]                            |
-  |                                      |
-  |--- ③ ACK (ack=y+1) ---------------->|
-  |                                      ↓
-  |                                 [ESTABLISHED]
-  |                                      |
-  |<=== 数据传输 ======================>|
-```
+![TCP 三次握手](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090119305-077e9c4e-d26a-437f-8df1-3900163e2a05.jpg.jpeg)
 
 ### 📝 详细步骤
 
@@ -189,6 +151,8 @@ Acknowledgment Number: server_isn + 1
 老张风风火火地赶回家，老婆顺利地生了个带把的大胖小子。握手的故事充满了幸福和美满 😊
 
 #### 泡妞版 💘
+
+![大白话三次握手](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090119875-a2fa8722-4020-4c4d-a609-049c28bcb886.jpg.jpeg)
 
 你（客户端）在一个拥挤的聚会上遇到了你想交谈的美女（服务器）。因为周围很吵，你们需要确认对方都准备好交流。
 
@@ -318,35 +282,7 @@ FIN → ACK → FIN → ACK，优雅断开双向连接
 
 ### 📊 挥手流程图
 
-```
-客户端                                服务端
-ESTABLISHED                         ESTABLISHED
-  |                                      |
-  |--- ① FIN (seq=u) ------------------>|
-  |    [FIN_WAIT_1]                      |
-  |                                      ↓
-  |                                 [CLOSE_WAIT]
-  |                                      |
-  |<-- ② ACK (ack=u+1) -----------------|
-  |                                      |
-  ↓                                      |
-[FIN_WAIT_2]                             |
-  |                                      |
-  |               (服务端处理剩余数据)   |
-  |                                      |
-  |<-- ③ FIN (seq=w) -------------------|
-  |                                      ↓
-  ↓                                 [LAST_ACK]
-[TIME_WAIT]                              |
-  |                                      |
-  |--- ④ ACK (ack=w+1) ---------------->|
-  |                                      ↓
-  |                                   CLOSED
-  ↓
-(等待 2MSL)
-  |
-CLOSED
-```
+![TCP 四次挥手](https://cdn.nlark.com/yuque/0/2025/webp/49518801/1747734219350-ac49e917-ee58-4a60-b934-c160383ddf05.webp)
 
 ### 📝 详细步骤
 
@@ -549,41 +485,7 @@ try (Socket socket = serverSocket.accept()) {
 
 ### 📊 完整状态机
 
-```
-客户端                                        服务端
-CLOSED                                        CLOSED
-  |                                              |
-  | (主动打开)                                   | (被动打开)
-  ↓                                              ↓
-  | send SYN                                  LISTEN
-  ↓                                              |
-SYN_SENT                                         |
-  |                                              | recv SYN
-  | recv SYN+ACK                                 ↓
-  ↓                                              | send SYN+ACK
-  | send ACK                                  SYN_RCVD
-  ↓                                              |
-ESTABLISHED <--------------------------------> recv ACK
-  |                                              ↓
-  |                                         ESTABLISHED
-  | (主动关闭)                                   |
-  | send FIN                                     |
-  ↓                                              |
-FIN_WAIT_1                                       | recv FIN
-  |                                              ↓
-  | recv ACK                                     | send ACK
-  ↓                                         CLOSE_WAIT
-FIN_WAIT_2                                       |
-  |                                              | (被动关闭)
-  | recv FIN                                     | send FIN
-  ↓                                              ↓
-  | send ACK                                  LAST_ACK
-TIME_WAIT                                        |
-  |                                              | recv ACK
-  | (等待 2MSL)                                  ↓
-  ↓                                           CLOSED
-CLOSED
-```
+![TCP 状态机](https://cdn.nlark.com/yuque/0/2025/webp/49518801/1747734219186-ba0a2f24-fc7a-4b55-b099-6461713dd96d.webp)
 
 ### 📝 状态说明
 

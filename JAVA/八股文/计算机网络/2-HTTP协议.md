@@ -464,26 +464,17 @@ Cookie 存客户端，Session 存服务端，Session ID 通过 Cookie 传递
 
 ### 🔗 Session 和 Cookie 的关系
 
+![Session 和 Cookie](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090118564-b64d51c1-3f27-4475-a6a0-f147e44caa45.jpg.jpeg)
+
 **工作流程**:
+
+![Session 和 Cookie 工作流程](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090118761-a2d4eb53-eace-4e62-a0d2-30e35d1cfd25.jpg.jpeg)
+
 1. 用户首次访问，服务器创建 Session，生成 Session ID
 2. 服务器通过 `Set-Cookie` 将 Session ID 返回给客户端
 3. 客户端保存 Session ID 到 Cookie
 4. 后续请求自动携带 Cookie（Session ID）
 5. 服务器根据 Session ID 查找 Session 数据
-
-```
-Client                        Server
-  |                              |
-  |------- 1. 首次请求 ---------->|
-  |                              | 创建 Session (ID=abc123)
-  |<--- Set-Cookie: sid=abc123 --|
-  |                              |
-  | 保存 Cookie                  |
-  |                              |
-  |-- 2. 再次请求 (Cookie:sid) -->|
-  |                              | 根据 sid 查找 Session
-  |<----- 返回个性化内容 ---------|
-```
 
 ### 🎯 高频追问
 
@@ -504,15 +495,7 @@ Client                        Server
    - 使用 Redis/Memcached 等存储 Session
    - 所有服务器共享同一个 Session 存储
 
-```
-         Nginx
-          / \
-         /   \
-     Server1 Server2
-         \   /
-          \ /
-         Redis (Session)
-```
+![Session 共享](https://cdn.nlark.com/yuque/0/2025/jpeg/49518801/1746090119315-bfc936c9-061e-4ae8-8ead-478ed26539a2.jpg.jpeg)
 
 **Q2: 客户端禁用 Cookie 怎么办？**
 

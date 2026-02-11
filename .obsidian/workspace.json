@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
+                "file": "JAVA/八股文/计算机网络/1-网络分层模型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0-计算机网络面试核心"
+              "title": "1-网络分层模型"
             }
           }
         ],
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
+                "file": "JAVA/八股文/计算机网络/1-网络分层模型.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "0-计算机网络面试核心 的大纲"
+              "title": "1-网络分层模型 的大纲"
             }
           },
           {
@@ -195,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 385.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,6 +212,8 @@
   },
   "active": "fa83899ca1470dab",
   "lastOpenFiles": [
+    "JAVA/八股文/计算机网络/_方案B完成报告.md",
+    "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
     "JAVA/八股文/计算机网络/5-常见问题与实战.md",
     "README.md",
     "GEMINI.md",
@@ -218,7 +221,6 @@
     "JAVA/八股文/计算机网络/1-网络分层模型.md",
     "JAVA/八股文/计算机网络/4-TCP协议详解.md",
     "JAVA/八股文/计算机网络/2-HTTP协议.md",
-    "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
     "JAVA/八股文/计算机网络/3-HTTPS与加密.md",
     "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
     "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
@@ -252,7 +254,6 @@
     "JAVA/algorithm-go/让我们一起刷算法/algorithm-go/让我们一起刷算法.assert/1748411715966-9c15fcf1-88d9-4ad7-b696-e2041e9f1e3f.png",
     "JAVA/algorithm-go/让我们一起刷算法/algorithm-go/让我们一起刷算法.assert/1748411715715-90672141-daf4-4391-8584-a4f26ed8ed10.png",
     "JAVA/algorithm-go/让我们一起刷算法/algorithm-go/让我们一起刷算法.assert/1748411715434-0607fedd-3bfc-49ee-86cb-afd56130028b.png",
-    "JAVA/algorithm-go/让我们一起刷算法/algorithm-go/让我们一起刷算法.md",
     "JAVA/algorithm-go/让我们一起刷算法/algorithm-go/让我们一起刷算法.assert",
     "JAVA/algorithm-go/让我们一起刷算法/algorithm-go",
     "JAVA/algorithm-go/让我们一起刷算法",
