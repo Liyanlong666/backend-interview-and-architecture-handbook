@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/MySQL/_整理进度报告.md",
+                "file": "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_整理进度报告"
+              "title": "事务&日志"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/八股文/MySQL/_整理进度报告.md",
+                "file": "JAVA/八股文/MySQL/_原笔记备份/事务&日志.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_整理进度报告 的大纲"
+              "title": "事务&日志 的大纲"
             }
           },
           {
@@ -196,6 +196,11 @@
   },
   "active": "f9b1b9b91e1b9ed4",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
+    "JAVA/八股文/MySQL/_整理进度报告.md",
+    "JAVA/八股文/MySQL/_原笔记备份/MySQL.md.bak",
+    "JAVA/八股文/MySQL/MySQL.md",
+    "JAVA/八股文/MySQL/事务&日志/事务&日志.md",
     "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
     "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
     "JAVA/八股文/计算机网络/计算机网络.md",
@@ -213,7 +218,6 @@
     "JAVA/八股文/MySQL/assets-main/mysql-a122d6d5-fff2-4ccd-8ddb-a9282eb2e2da.jpg",
     "JAVA/八股文/MySQL/assets-main/mysql-812fb038-39de-4204-ac9f-93d8b7448a18.jpg",
     "JAVA/八股文/MySQL/assets-main",
-    "JAVA/八股文/MySQL/_整理进度报告.md",
     "JAVA/八股文/计算机网络/1-网络分层模型.md",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.md",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert",
@@ -228,18 +232,14 @@
     "JAVA/八股文/MySQL/assets/6-常见问题与实战",
     "JAVA/八股文/MySQL/assets/5-SQL优化",
     "JAVA/八股文/MySQL/assets/4-锁机制",
-    "JAVA/八股文/MySQL/assets/3-事务与日志",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
-    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
     "JAVA/八股文/计算机网络/5-常见问题与实战.md",
     "README.md",
     "JAVA/八股文/计算机网络/3-HTTPS与加密.md",
     "GEMINI.md",
     "JAVA/八股文/计算机网络/4-TCP协议详解.md",
-    "JAVA/八股文/MySQL/事务&日志/事务&日志.md",
     "Clippings/Gemini CLI 会话管理：自动保存和恢复你的 AI 对话上下文.md",
     "gemini-scribe/Prompts/example-expert.md",
-    "JAVA/八股文/JUC面试题/并发工具类/并发工具类.md",
-    "JAVA/kafka/kafka.md"
+    "JAVA/八股文/JUC面试题/并发工具类/并发工具类.md"
   ]
 }
