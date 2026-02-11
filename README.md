@@ -102,11 +102,6 @@ obsidian-cli create "JAVA/新主题/笔记名" --content "..." --open
 ✅ 系统性知识梳理  
 ✅ 快速查阅技术要点  
 
-## 📊 统计信息
-
-- 📝 **笔记数量**: 39 篇 Markdown 文件
-- 📍 **存储位置**: `/Users/liyanlong/Desktop/My-Obsidian-Repository`
-- 🔄 **最近更新**: 2026-02-11
 
 ---
 
