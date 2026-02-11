@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/计算机网络/2-HTTP协议.md",
+                "file": "JAVA/八股文/MySQL/_整理进度报告.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-HTTP协议"
+              "title": "_整理进度报告"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/八股文/计算机网络/2-HTTP协议.md",
+                "file": "JAVA/八股文/MySQL/_整理进度报告.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2-HTTP协议 的大纲"
+              "title": "_整理进度报告 的大纲"
             }
           },
           {
@@ -194,19 +194,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b3b9f58135b2d3b4",
+  "active": "f9b1b9b91e1b9ed4",
   "lastOpenFiles": [
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-fcdaad5f-c50e-4834-9f9a-0b676cc6be83.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-fcd34332-d38d-455a-875d-d4afd37cac72.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-f2313613-25bd-4065-8f63-969a4b5757a7.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-e01e7757-c337-48c8-95db-2f7cfd2bc036.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-debe0fb1-d7f7-4ef2-8c99-13c9377138b6.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-d94e5e1c-2614-4b8b-acdb-efb333032854.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-b7aa040e-a3a7-4133-8c43-baccc3c8d012.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-b3882ca3-1d04-44e2-9015-7e6c867255a0.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-a122d6d5-fff2-4ccd-8ddb-a9282eb2e2da.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-812fb038-39de-4204-ac9f-93d8b7448a18.jpg",
-    "JAVA/八股文/MySQL/assets/1-MySQL基础/mysql-7cba6ce0-c8bb-4f51-9c3b-e5a44e724c79.jpg",
+    "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
+    "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
+    "JAVA/八股文/计算机网络/计算机网络.md",
+    "JAVA/八股文/计算机网络/2-HTTP协议.md",
+    "JAVA/八股文/计算机网络/_方案B完成报告.md",
+    "JAVA/八股文/计算机网络/_离线图片配置完成.md",
+    "JAVA/八股文/MySQL/assets-main/mysql-fcdaad5f-c50e-4834-9f9a-0b676cc6be83.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-fcd34332-d38d-455a-875d-d4afd37cac72.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-f2313613-25bd-4065-8f63-969a4b5757a7.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-e01e7757-c337-48c8-95db-2f7cfd2bc036.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-debe0fb1-d7f7-4ef2-8c99-13c9377138b6.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-d94e5e1c-2614-4b8b-acdb-efb333032854.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-b7aa040e-a3a7-4133-8c43-baccc3c8d012.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-b3882ca3-1d04-44e2-9015-7e6c867255a0.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-a122d6d5-fff2-4ccd-8ddb-a9282eb2e2da.jpg",
+    "JAVA/八股文/MySQL/assets-main/mysql-812fb038-39de-4204-ac9f-93d8b7448a18.jpg",
+    "JAVA/八股文/MySQL/assets-main",
     "JAVA/八股文/MySQL/_整理进度报告.md",
     "JAVA/八股文/计算机网络/1-网络分层模型.md",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.md",
@@ -223,20 +229,13 @@
     "JAVA/八股文/MySQL/assets/5-SQL优化",
     "JAVA/八股文/MySQL/assets/4-锁机制",
     "JAVA/八股文/MySQL/assets/3-事务与日志",
-    "JAVA/八股文/MySQL/assets/2-索引详解",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
-    "JAVA/八股文/计算机网络/_离线图片配置完成.md",
     "JAVA/八股文/MySQL/0-MySQL面试核心.md",
-    "JAVA/八股文/计算机网络/_方案B完成报告.md",
-    "JAVA/八股文/计算机网络/计算机网络.md",
     "JAVA/八股文/计算机网络/5-常见问题与实战.md",
     "README.md",
     "JAVA/八股文/计算机网络/3-HTTPS与加密.md",
-    "JAVA/八股文/计算机网络/2-HTTP协议.md",
     "GEMINI.md",
     "JAVA/八股文/计算机网络/4-TCP协议详解.md",
-    "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
-    "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
     "JAVA/八股文/MySQL/事务&日志/事务&日志.md",
     "Clippings/Gemini CLI 会话管理：自动保存和恢复你的 AI 对话上下文.md",
     "gemini-scribe/Prompts/example-expert.md",
