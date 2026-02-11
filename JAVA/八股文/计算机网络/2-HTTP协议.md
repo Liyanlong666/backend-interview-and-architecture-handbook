@@ -464,11 +464,11 @@ Cookie 存客户端，Session 存服务端，Session ID 通过 Cookie 传递
 
 ### 🔗 Session 和 Cookie 的关系
 
-![Session 和 Cookie](.assert/2-HTTP协议/session-cookie.jpg)
+![Session 和 Cookie](assets/2-HTTP协议/session-cookie.jpg)
 
 **工作流程**:
 
-![Session 和 Cookie 工作流程](.assert/2-HTTP协议/session-workflow.jpg)
+![Session 和 Cookie 工作流程](assets/2-HTTP协议/session-workflow.jpg)
 
 1. 用户首次访问，服务器创建 Session，生成 Session ID
 2. 服务器通过 `Set-Cookie` 将 Session ID 返回给客户端
@@ -495,7 +495,7 @@ Cookie 存客户端，Session 存服务端，Session ID 通过 Cookie 传递
    - 使用 Redis/Memcached 等存储 Session
    - 所有服务器共享同一个 Session 存储
 
-![Session 共享](.assert/2-HTTP协议/session-share.jpg)
+![Session 共享](assets/2-HTTP协议/session-share.jpg)
 
 **Q2: 客户端禁用 Cookie 怎么办？**
 

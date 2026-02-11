@@ -31,7 +31,7 @@ TCP 是面向连接、可靠、基于字节流的传输层协议
 
 ### 📊 TCP 头部格式
 
-![TCP 头部格式](.assert/4-TCP协议详解/tcp-header.webp)
+![TCP 头部格式](assets/4-TCP协议详解/tcp-header.webp)
 
 **重点字段**:
 
@@ -82,7 +82,7 @@ SYN → SYN+ACK → ACK，建立可靠双向连接
 
 ### 📊 握手流程图
 
-![TCP 三次握手](.assert/4-TCP协议详解/tcp-handshake.jpg)
+![TCP 三次握手](assets/4-TCP协议详解/tcp-handshake.jpg)
 
 ### 📝 详细步骤
 
@@ -152,7 +152,7 @@ Acknowledgment Number: server_isn + 1
 
 #### 泡妞版 💘
 
-![大白话三次握手](.assert/4-TCP协议详解/tcp-handshake-analogy.jpg)
+![大白话三次握手](assets/4-TCP协议详解/tcp-handshake-analogy.jpg)
 
 你（客户端）在一个拥挤的聚会上遇到了你想交谈的美女（服务器）。因为周围很吵，你们需要确认对方都准备好交流。
 
@@ -282,7 +282,7 @@ FIN → ACK → FIN → ACK，优雅断开双向连接
 
 ### 📊 挥手流程图
 
-![TCP 四次挥手](.assert/4-TCP协议详解/tcp-wave.webp)
+![TCP 四次挥手](assets/4-TCP协议详解/tcp-wave.webp)
 
 ### 📝 详细步骤
 
@@ -485,7 +485,7 @@ try (Socket socket = serverSocket.accept()) {
 
 ### 📊 完整状态机
 
-![TCP 状态机](.assert/4-TCP协议详解/tcp-state-machine.webp)
+![TCP 状态机](assets/4-TCP协议详解/tcp-state-machine.webp)
 
 ### 📝 状态说明
 
