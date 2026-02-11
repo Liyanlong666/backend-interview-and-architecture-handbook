@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/MySQL/MySQL基础/MySQL基础详解.md",
+                "file": "JAVA/八股文/MySQL/事务&日志/事务详解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MySQL基础详解"
+              "title": "事务详解"
             }
           }
         ]
@@ -196,9 +196,17 @@
   },
   "active": "b3b9f58135b2d3b4",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106256390-a77c8975-8abf-4bd4-89cc-727abea18aeb.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106255974-b62c6fda-87c6-4242-af15-95cc7befcecf.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106255683-79932170-ddb5-44ef-9371-2fa5f4b25969.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106255482-349f08d0-c16b-45de-bad8-7e930a98b9cb.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106255428-50051ea3-b977-47c6-a8ca-c185a9070ca8.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106255350-1ed0d03d-07cf-43c7-8944-05d8a1350016.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets/1756106255229-dec7706d-1b17-4c3e-8b39-490ba2db3df9.png",
+    "JAVA/八股文/MySQL/SQL 优化/assets",
+    "JAVA/八股文/MySQL/MySQL基础/MySQL基础详解.md",
     "JAVA/八股文/MySQL/0-MySQL面试核心.md",
     "JAVA/八股文/MySQL/_整理进度报告.md",
-    "JAVA/八股文/MySQL/MySQL基础/MySQL基础详解.md",
     "JAVA/八股文/MySQL/_原笔记备份/MySQL.md",
     "gemini-scribe/Prompts/example-expert.md",
     "JAVA/八股文/MySQL/SQL 优化/SQL优化详解.md",
@@ -225,22 +233,14 @@
     "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
     "JAVA/八股文/计算机网络/HTTP_HTTPS-牛客面经八股.md",
     "JAVA/八股文/计算机网络/计算机网络.md",
-    "JAVA/八股文/计算机网络/2-HTTP协议.md",
     "JAVA/八股文/MySQL/assets-main/mysql-fcdaad5f-c50e-4834-9f9a-0b676cc6be83.jpg",
     "JAVA/八股文/MySQL/assets-main/mysql-fcd34332-d38d-455a-875d-d4afd37cac72.jpg",
     "JAVA/八股文/MySQL/assets-main/mysql-f2313613-25bd-4065-8f63-969a4b5757a7.jpg",
-    "JAVA/八股文/MySQL/assets-main/mysql-e01e7757-c337-48c8-95db-2f7cfd2bc036.jpg",
-    "JAVA/八股文/MySQL/assets-main/mysql-debe0fb1-d7f7-4ef2-8c99-13c9377138b6.jpg",
-    "JAVA/八股文/MySQL/assets-main/mysql-d94e5e1c-2614-4b8b-acdb-efb333032854.jpg",
-    "JAVA/八股文/MySQL/assets-main/mysql-b7aa040e-a3a7-4133-8c43-baccc3c8d012.jpg",
-    "JAVA/八股文/MySQL/assets-main/mysql-b3882ca3-1d04-44e2-9015-7e6c867255a0.jpg",
-    "JAVA/八股文/MySQL/assets-main/mysql-a122d6d5-fff2-4ccd-8ddb-a9282eb2e2da.jpg",
     "JAVA/八股文/MySQL/assets-main",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert",
     "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert",
     "JAVA/八股文/MySQL/_原笔记备份/锁.assert",
     "JAVA/八股文/MySQL/_原笔记备份/索引.assert",
-    "JAVA/八股文/MySQL/_原笔记备份",
-    "JAVA/八股文/MySQL/assets/6-常见问题与实战"
+    "JAVA/八股文/MySQL/_原笔记备份"
   ]
 }
