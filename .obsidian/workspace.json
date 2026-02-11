@@ -196,6 +196,11 @@
   },
   "active": "b3b9f58135b2d3b4",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/MySQL基础/MySQL基础详解.md",
+    "JAVA/八股文/MySQL/SQL 优化/SQL优化详解.md",
+    "JAVA/八股文/MySQL/锁/锁机制详解.md",
+    "JAVA/八股文/MySQL/事务&日志/事务详解.md",
+    "JAVA/八股文/MySQL/索引/索引详解.md",
     "基本概念.md",
     "AI/OpenClaw 与自主智能体架构深度剖析：核心机制、ClawHavoc 供应链危机与本地化 AI 的未来.md",
     "AI",
@@ -231,16 +236,11 @@
     "JAVA/八股文/MySQL/assets-main/mysql-a122d6d5-fff2-4ccd-8ddb-a9282eb2e2da.jpg",
     "JAVA/八股文/MySQL/assets-main/mysql-812fb038-39de-4204-ac9f-93d8b7448a18.jpg",
     "JAVA/八股文/MySQL/assets-main",
-    "JAVA/八股文/计算机网络/1-网络分层模型.md",
-    "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.md",
     "JAVA/八股文/MySQL/_原笔记备份/SQL 优化.assert",
     "JAVA/八股文/MySQL/_原笔记备份/事务&日志.assert",
-    "JAVA/八股文/MySQL/_原笔记备份/锁.md",
     "JAVA/八股文/MySQL/_原笔记备份/锁.assert",
     "JAVA/八股文/MySQL/_原笔记备份/索引.assert",
     "JAVA/八股文/MySQL/_原笔记备份",
-    "JAVA/八股文/MySQL/assets/6-常见问题与实战",
-    "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
-    "JAVA/八股文/计算机网络/5-常见问题与实战.md"
+    "JAVA/八股文/MySQL/assets/6-常见问题与实战"
   ]
 }

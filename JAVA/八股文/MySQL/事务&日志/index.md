@@ -4,8 +4,8 @@ MySQL 事务和日志机制是保证数据一致性的核心。
 
 ## 目录
 - [[0-MySQL面试核心]] - 核心知识点速览
-- [[事务原理]] - ACID特性、隔离级别
-- [[日志机制]] - undo log、redo log、binlog
+- [[事务详解]] - ACID特性、隔离级别
+-  - undo log、redo log、binlog
 
 ## 高频考点
 - 事务四大特性 ACID：原子性、一致性、隔离性、持久性
