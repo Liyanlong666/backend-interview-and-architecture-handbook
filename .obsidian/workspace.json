@@ -194,8 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b3b9f58135b2d3b4",
+  "active": "db2c06e9066451aa",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/索引/索引详解.md",
+    "JAVA/八股文/MySQL/事务&日志/事务详解.md",
     "JAVA/八股文/MySQL/锁/assets/1747623541841-c141d6f3-0d94-4235-8212-3c53e16c36ac.png",
     "JAVA/八股文/MySQL/锁/assets/1747623541637-6dcb9a74-14b8-4b7e-ab67-9c9db3476874.png",
     "JAVA/八股文/MySQL/锁/assets/1747623541507-fbe3f6d2-08ba-46d1-aa91-485f0d634057.png",
@@ -206,7 +208,6 @@
     "JAVA/八股文/MySQL/锁/assets/1747623540902-02b0ec66-3805-4a83-bfbd-df8fb6e7e35c.png",
     "JAVA/八股文/MySQL/锁/assets/1747623540783-7e09a2e9-2420-468d-8e55-66e35921ba2a.png",
     "JAVA/八股文/MySQL/锁/assets/1747623540757-6440a006-7ad1-40de-9571-274733b9bf59.png",
-    "JAVA/八股文/MySQL/锁/assets/1747623540681-aeb77a6a-c185-4841-82d3-2b64301a2913.png",
     "JAVA/八股文/MySQL/锁/assets",
     "JAVA/八股文/MySQL/索引/assets",
     "JAVA/八股文/MySQL/事务&日志/assets",
@@ -221,8 +222,6 @@
     "JAVA/八股文/MySQL/MySQL基础/index.md",
     "AI/OpenClaw 与自主智能体架构深度剖析：核心机制、ClawHavoc 供应链危机与本地化 AI 的未来.md",
     "JAVA/八股文/MySQL/锁/锁机制详解.md",
-    "JAVA/八股文/MySQL/事务&日志/事务详解.md",
-    "JAVA/八股文/MySQL/索引/索引详解.md",
     "基本概念.md",
     "AI",
     "JAVA/八股文/MySQL/MySQL.md",
