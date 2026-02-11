@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GEMINI.md",
+                "file": "JAVA/八股文/MySQL/事务&日志/事务&日志.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GEMINI"
+              "title": "事务&日志"
             }
           }
         ]
@@ -196,6 +196,7 @@
   },
   "active": "f9b1b9b91e1b9ed4",
   "lastOpenFiles": [
+    "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
     "README.md",
     "GEMINI.md",
     "Clippings/Gemini CLI 会话管理：自动保存和恢复你的 AI 对话上下文.md",
