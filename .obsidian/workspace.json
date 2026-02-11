@@ -196,6 +196,7 @@
   },
   "active": "f9b1b9b91e1b9ed4",
   "lastOpenFiles": [
+    "JAVA/八股文/计算机网络/3-HTTPS与加密.md",
     "JAVA/八股文/计算机网络/2-HTTP协议.md",
     "JAVA/八股文/计算机网络/计算机网络.md",
     "JAVA/八股文/计算机网络/TCP 三次握手与四次挥手 _ 小林coding.md",
@@ -240,7 +241,6 @@
     "JAVA/algorithm-go",
     "JAVA/非算法类 手撕/非算法类 手撕.md",
     "JAVA/八股文/Redis/缓存三件套/缓存三件套.md",
-    "JAVA/八股文/Redis/持久化/持久化.md",
-    "JAVA/八股文/Redis/分布式锁常见实现方案总结  JavaGuide/分布式锁常见实现方案总结  JavaGuide.md"
+    "JAVA/八股文/Redis/持久化/持久化.md"
   ]
 }
