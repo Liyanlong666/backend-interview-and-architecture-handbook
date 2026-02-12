@@ -167,3 +167,60 @@ AQS（及其子类如 ReentrantLock）提供了监控方法（通常是 `final` 
 *   **解决**：
     *   **Try-Catch 包裹**：在 `run()` 方法内部最外层包裹 `try-catch` 并打印日志。
     *   **重写 `afterExecute`**：扩展 `ThreadPoolExecutor`，重写 `afterExecute` 方法统一处理异常。
+
+## 6-ThreadLocal
+
+### 常见场景题汇总
+
+#### [场景1：ThreadLocal 内存泄漏真凶]
+**问题描述**：
+面试官问：ThreadLocal 的 Key 是弱引用（WeakReference），GC 的时候会被回收。那为什么还会说 ThreadLocal 会导致内存泄漏呢？
+
+**解答**：
+这是对 ThreadLocal 内存结构的经典误解。
+*   **结构**：`Thread` -> `ThreadLocalMap` -> `Entry(Key, Value)`。
+*   **泄漏路径**：
+    1.  Key（ThreadLocal 对象）是弱引用，GC 时确实会被回收，导致 Key 变为 null。
+    2.  但是 **Value**（业务对象）是强引用！
+    3.  如果线程（Thread）一直不死（例如在线程池中），那么这条强引用链 `Thread -> Map -> Entry -> Value` 就会一直存在。
+    4.  Key 没了，Value 还在，且无法访问（因为 Key 是 null），这就是内存泄漏。
+*   **解决**：务必在 `finally` 块中调用 `threadLocal.remove()`.
+
+#### [场景2：SimpleDateFormat 线程安全优化]
+**问题描述**：
+`SimpleDateFormat` 是非线程安全的。在 Web 应用中，如果每次请求都 `new SimpleDateFormat()` 会有性能损耗；如果定义为 `static` 共享又会报错。怎么解决？
+
+**解答**：
+使用 `ThreadLocal` 封装。
+```java
+private static final ThreadLocal<SimpleDateFormat> dateFormatHolder = 
+    ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd"));
+
+public void formatTime(Date date) {
+    // 每个线程获取自己的 SimpleDateFormat 副本，互不干扰
+    String str = dateFormatHolder.get().format(date);
+}
+```
+这样既避免了频繁创建对象的开销，又保证了线程安全。
+（注：JDK 8+ 推荐使用 `DateTimeFormatter`，它是线程安全的，无需 ThreadLocal）。
+
+#### [场景3：Spring 事务管理的魔法]
+**问题描述**：
+在 Spring 中，我们在 Service 层开启事务 (`@Transactional`)，然后调用多个 DAO 层方法。这些 DAO 方法并没有手动传递 `Connection` 参数，为什么它们能使用同一个数据库连接，从而保证在同一个事务中？
+
+**解答**：
+Spring 使用了 **ThreadLocal**。
+*   在事务开始时，Spring 获取一个数据库连接，并将其绑定到当前线程的 `ThreadLocal` map 中（通过 `TransactionSynchronizationManager`）。
+*   后续的 DAO 方法执行时，会先去这个 `ThreadLocal` 中查找是否有已绑定的连接。
+*   如果有，就直接使用，不再创建新连接。
+这就是“连接绑定”机制，确保了同一线程内的多个操作共享同一个物理事务。
+
+#### [场景4：全链路追踪（TraceId）]
+**问题描述**：
+在微服务架构中，如何让一个请求的 TraceId 贯穿整个服务内部的所有日志（包括 Controller、Service、Dao）？
+
+**解答**：
+1.  **入口拦截**：在拦截器（Interceptor/Filter）中，从请求头解析 TraceId。
+2.  **存储**：存入 `MDC` (Mapped Diagnostic Context) 或自定义的 `ThreadLocal`。
+3.  **日志打印**：Log4j/Logback 会自动从 MDC 中取出 TraceId 打印到每一行日志中。
+4.  **出口清理**：请求结束时，在拦截器的 `afterCompletion` 中调用 `MDC.clear()` 或 `remove()`, 防止内存泄漏和数据污染。
