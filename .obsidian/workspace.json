@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/MySQL/0-MySQL面试核心.md",
+                "file": "JAVA/八股文/MySQL/5-SQL优化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0-MySQL面试核心"
+              "title": "5-SQL优化"
             }
           }
         ]
@@ -197,12 +197,12 @@
   },
   "active": "f32d951315166792",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/2-索引.md",
+    "JAVA/八股文/MySQL/4-锁.md",
+    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
     "JAVA/八股文/MySQL/_整理进度报告.md",
     "JAVA/八股文/MySQL/5-SQL优化.md",
-    "JAVA/八股文/MySQL/4-锁.md",
-    "JAVA/八股文/MySQL/2-索引.md",
     "JAVA/八股文/MySQL/1-MySQL基础.md",
-    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
     "JAVA/八股文/Redis/0-Redis面试核心.md",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
     "JAVA/八股文/计算机网络/计算机网络.md",
