@@ -2,7 +2,7 @@
 推荐阅读：[ThreadLocal 全面解析](https://www.bilibili.com/video/BV1N741127FH/)
 ### [12.ThreadLocal 是什么？](https://javabetter.cn/sidebar/sanfene/javathread.html#_12-threadlocal-%E6%98%AF%E4%BB%80%E4%B9%88)
 [ThreadLocal](https://javabetter.cn/thread/ThreadLocal.html) 是 Java 中提供的一种用于实现线程局部变量的工具类。它允许每个线程都拥有自己的独立副本，从而实现线程隔离，用于解决多线程中共享对象的线程安全问题。
-![image.jpg](1738590534501-88020dbc-5d5c-4bce-a715-e70fcf4e824c.png)
+![](assets/1738590534501-88020dbc-5d5c-4bce-a715-e70fcf4e824c.png)
 
 三分恶面渣逆袭：ThreadLocal线程副本
 在 Web 应用中，可以使用 ThreadLocal 存储用户会话信息，这样每个线程在处理用户请求时都能方便地访问当前用户的会话信息。
@@ -79,19 +79,19 @@ private volatile boolean flag = false;
 ```
 ### [13.你在工作中用到过 ThreadLocal 吗？](https://javabetter.cn/sidebar/sanfene/javathread.html#_13-%E4%BD%A0%E5%9C%A8%E5%B7%A5%E4%BD%9C%E4%B8%AD%E7%94%A8%E5%88%B0%E8%BF%87-threadlocal-%E5%90%97)
 有用到过，用来存储用户信息。
-![image.jpg](1738590535438-5d24776d-fbda-466a-beb2-a617d6e7a565.png)
+![](assets/1738590535438-5d24776d-fbda-466a-beb2-a617d6e7a565.png)
 
 [技术派实战项目](https://javabetter.cn/zhishixingqiu/paicoding.html)是典型的 MVC 架构，登录后的用户每次访问接口，都会在请求头中携带一个 token，在控制层可以根据这个 token，解析出用户的基本信息。
 假如在服务层和持久层也要用到用户信息，就可以在控制层拦截请求把用户信息存入 ThreadLocal。
-![image.jpg](1738590537279-a17ce8ca-fe5d-498b-b654-e2bff0b9c879.png)
+![](assets/1738590537279-a17ce8ca-fe5d-498b-b654-e2bff0b9c879.png)
 
 技术派实战源码
 这样我们在任何一个地方，都可以取出 ThreadLocal 中存的用户信息。
-![image.jpg](1738590536116-4023879e-26f0-4703-8391-ac34553e3a9b.png)
+![](assets/1738590536116-4023879e-26f0-4703-8391-ac34553e3a9b.png)
 
 技术派实战源码
 很多其它场景的 cookie、session 等等数据隔离都可以通过 ThreadLocal 去实现。
-![image.jpg](1738590535374-007ad01d-c4e0-4854-9205-1a7b2854d4ea.png)
+![](assets/1738590535374-007ad01d-c4e0-4854-9205-1a7b2854d4ea.png)
 
 三分恶面渣逆袭：ThreadLoca存放用户上下文
 数据库连接池也可以用 ThreadLocal，将数据库连接池的连接交给 ThreadLocal 进行管理，能够保证当前线程的操作都是同一个 Connnection。
@@ -100,15 +100,15 @@ private volatile boolean flag = false;
 2. [Java 面试指南（付费）](https://javabetter.cn/zhishixingqiu/mianshi.html)收录的快手面经同学 1 部门主站技术部面试原题：请说一下 ThreadLocal 的作用和使用场景？
 ### [14.ThreadLocal 怎么实现的呢？](https://javabetter.cn/sidebar/sanfene/javathread.html#_14-threadlocal-%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%91%A2)
 ThreadLocal 本身并不存储任何值，它只是作为一个映射，来映射线程的局部变量。当一个线程调用 ThreadLocal 的 set 或 get 方法时，实际上是访问线程自己的 ThreadLocal.ThreadLocalMap。
-![image.jpg](1738590536234-ecd374d8-d5cb-47c9-b8cb-61f029747068.png)
+![](assets/1738590536234-ecd374d8-d5cb-47c9-b8cb-61f029747068.png)
 
 二哥的 Java 进阶之路：ThreadLocalMap
 ThreadLocalMap 是 ThreadLocal 的静态内部类，它内部维护了一个 Entry 数组，key 是 ThreadLocal 对象，value 是线程的局部变量本身。
-![image.jpg](1738590535820-bfce1b58-dd32-487a-b3f0-2b4d604a35c4.png)
+![](assets/1738590535820-bfce1b58-dd32-487a-b3f0-2b4d604a35c4.png)
 
 三分恶面渣逆袭：ThreadLoca结构图
 早期的 ThreadLocal 不是这样的，它的 ThreadLocalMap 中使用 Thread 作为 key，这也是最简单的实现方式。
-![image.jpg](1738590536900-7e231d14-80a0-4c73-a7bf-9899cea216e2.png)
+![](assets/1738590536900-7e231d14-80a0-4c73-a7bf-9899cea216e2.png)
 
 黑马：JDK 早期设计
 优化后的方案有两个好处，一个是 Map 中存储的键值对变少了；另一个是 ThreadLocalMap 的生命周期和线程一样长，线程销毁的时候，ThreadLocalMap 也会被销毁。
@@ -132,7 +132,7 @@ ThreadLocal 的实现原理就是，每个线程维护一个 Map，key 为 Threa
 1、当需要存线程隔离的对象时，通过 ThreadLocal 的 set 方法将对象存入 Map 中。
 2、当需要取线程隔离的对象时，通过 ThreadLocal 的 get 方法从 Map 中取出对象。
 3、Map 的大小由 ThreadLocal 对象的多少决定。
-![image.jpg](1738590536304-0b798980-e269-4bff-849e-f7d3e4d32469.png)
+![](assets/1738590536304-0b798980-e269-4bff-849e-f7d3e4d32469.png)
 
 ThreadLocal 的结构
 #### [什么是弱引用，什么是强引用？](https://javabetter.cn/sidebar/sanfene/javathread.html#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%B1%E5%BC%95%E7%94%A8-%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%BA%E5%BC%95%E7%94%A8)
@@ -147,7 +147,7 @@ userThreadLocal.set(new User("沉默王二"));
 ①、userThreadLocal 是一个强引用，`new ThreadLocal<>()` 是一个强引用对象；
 ②、`new User("沉默王二")` 是一个强引用对象。
 ③、在 ThreadLocalMap 中，`key = new ThreadLocal<>()` 是一个弱引用对象。当 JVM 进行垃圾回收时，如果发现了弱引用对象，就会将其回收。
-![image.jpg](1738590536377-1f168658-45a9-4efd-90e2-01a37a84bbf8.png)
+![](assets/1738590536377-1f168658-45a9-4efd-90e2-01a37a84bbf8.png)
 
 三分恶面渣逆袭：ThreadLocal内存分配
 其关系链就是：
@@ -159,7 +159,7 @@ userThreadLocal.set(new User("沉默王二"));
 - Entry.value 强引用 -> 线程的局部变量对象。### [15.ThreadLocal 内存泄露是怎么回事？](https://javabetter.cn/sidebar/sanfene/javathread.html#_15-threadlocal-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B)
 通常情况下，随着线程 Thread 的结束，其内部的 ThreadLocalMap 也会被回收，从而避免了内存泄漏。
 但如果一个线程一直在运行，并且其 `ThreadLocalMap` 中的 Entry.value 一直指向某个强引用对象，那么这个对象就不会被回收，从而导致内存泄漏。当 Entry 非常多时，可能就会引发更严重的内存溢出问题。
-![image.jpg](1738590536743-0b627d2a-6829-4d0f-816f-39f2dea32984.png)
+![](assets/1738590536743-0b627d2a-6829-4d0f-816f-39f2dea32984.png)
 
 ThreadLocalMap 内存溢出
 #### [那怎么解决内存泄漏问题呢？](https://javabetter.cn/sidebar/sanfene/javathread.html#%E9%82%A3%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E9%97%AE%E9%A2%98%E5%91%A2)
@@ -204,10 +204,10 @@ WeakReference key = new WeakReference(new ThreadLocal());
 ```
 key 是弱引用，`new WeakReference(new ThreadLocal())` 是弱引用对象，当 JVM 进行垃圾回收时，如果发现了弱引用对象，就会将其回收。
 一旦 key 被回收，ThreadLocalMap 在进行 set、get 的时候就会对 key 为 null 的 Entry 进行清理。
-![image.jpg](1738590536839-7fde6ebd-721d-4194-9bb1-132825481350.png)
+![](assets/1738590536839-7fde6ebd-721d-4194-9bb1-132825481350.png)
 
 总结一下，在 ThreadLocal 被垃圾收集后，下一次访问 ThreadLocalMap 时，Java 会自动清理那些键为 null 的条目（参照源码中的 replaceStaleEntry 方法），这个过程会在执行 ThreadLocalMap 相关操作（如 `get()`, `set()`, `remove()`）时触发。
-![image.jpg](1738590537519-71f6cc5f-b717-4be5-9e45-87ca49f5b837.png)
+![](assets/1738590537519-71f6cc5f-b717-4be5-9e45-87ca49f5b837.png)
 
 二哥的 Java 进阶之路
 #### [你了解哪些 ThreadLocal 的改进方案？](https://javabetter.cn/sidebar/sanfene/javathread.html#%E4%BD%A0%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B-threadlocal-%E7%9A%84%E6%94%B9%E8%BF%9B%E6%96%B9%E6%A1%88)
@@ -230,7 +230,7 @@ public static int nextVariableIndex() {
 ```
 ### [16.ThreadLocalMap 的源码看过吗？](https://javabetter.cn/sidebar/sanfene/javathread.html#_16-threadlocalmap-%E7%9A%84%E6%BA%90%E7%A0%81%E7%9C%8B%E8%BF%87%E5%90%97)
 ThreadLocalMap 虽然被叫做 Map，其实它是没有实现 Map 接口的，但是结构还是和 HashMap 比较类似的，主要关注的是两个要素：`元素数组`和`散列方法`。
-![image.jpg](1738590537370-fcc4e109-4a33-4e43-a862-549860a76422.png)
+![](assets/1738590537370-fcc4e109-4a33-4e43-a862-549860a76422.png)
 
 ThreadLocalMap结构示意图
 
@@ -253,7 +253,7 @@ private static final int HASH_INCREMENT = 0x61c88647;
 ### [17.ThreadLocalMap 怎么解决 Hash 冲突的？](https://javabetter.cn/sidebar/sanfene/javathread.html#_17-threadlocalmap-%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3-hash-%E5%86%B2%E7%AA%81%E7%9A%84)
 我们可能都知道 HashMap 使用了链表来解决冲突，也就是所谓的链地址法。
 ThreadLocalMap 没有使用链表，自然也不是用链地址法来解决冲突了，它用的是另外一种方式——**开放定址法**。开放定址法是什么意思呢？简单来说，就是这个坑被人占了，那就接着去找空着的坑。
-![image.jpg](1738590537155-915c8113-f21a-4d8b-a258-3230b7862265.png)
+![](assets/1738590537155-915c8113-f21a-4d8b-a258-3230b7862265.png)
 
 ThreadLocalMap解决冲突
 如上图所示，如果我们插入一个 value=27 的数据，通过 hash 计算后应该落入第 4 个槽位中，而槽位 4 已经有了 Entry 数据，而且 Entry 数据的 key 和当前不相等。此时就会线性向后查找，一直找到 Entry 为 null 的槽位才会停止查找，把元素放到空的槽中。
@@ -289,11 +289,11 @@ private void expungeStaleEntries() {
 }
 ```
 接着看看具体的`resize()`方法，扩容后的`newTab`的大小为老数组的两倍，然后遍历老的 table 数组，散列方法重新计算位置，开放地址解决冲突，然后放到新的`newTab`，遍历完成之后，`oldTab`中所有的`entry`数据都已经放入到`newTab`中了，然后 table 引用指向`newTab`
-![image.jpg](1738590537490-1799d4f1-8122-4ada-a32f-e911e3d44d8d.png)
+![](assets/1738590537490-1799d4f1-8122-4ada-a32f-e911e3d44d8d.png)
 
 ThreadLocalMap扩容
 具体代码：
-![image.jpg](1738590537486-d7c00499-d8f5-483f-b4d2-55bb39f2df00.png)
+![](assets/1738590537486-d7c00499-d8f5-483f-b4d2-55bb39f2df00.png)
 
 ThreadLocalMap resize
 ### [19.父子线程怎么共享数据？](https://javabetter.cn/sidebar/sanfene/javathread.html#_19-%E7%88%B6%E5%AD%90%E7%BA%BF%E7%A8%8B%E6%80%8E%E4%B9%88%E5%85%B1%E4%BA%AB%E6%95%B0%E6%8D%AE)
