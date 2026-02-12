@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/JUC面试题/0-JUC面试核心.md",
+                "file": "JAVA/八股文/JUC面试题/3-锁.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0-JUC面试核心"
+              "title": "3-锁"
             }
           }
         ]
@@ -197,6 +197,8 @@
   },
   "active": "f32d951315166792",
   "lastOpenFiles": [
+    "JAVA/八股文/JVM面试题/6-JVM高频场景题.md",
+    "JAVA/八股文/JUC面试题/8-JUC高频场景题.md",
     "JAVA/八股文/JUC面试题/1-JUC基础.md",
     "JAVA/八股文/JUC面试题/0-JUC面试核心.md",
     "JAVA/八股文/JVM面试题/5-JVM牛客面经八股.md",
@@ -240,8 +242,6 @@
     "JAVA/八股文/MySQL/4-锁.md",
     "JAVA/八股文/MySQL/1-MySQL基础.md",
     "JAVA/八股文/Redis/0-Redis面试核心.md",
-    "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
-    "JAVA/八股文/计算机网络/计算机网络.md",
-    "JAVA/八股文/Redis/6-分布式锁总结.md"
+    "JAVA/八股文/计算机网络/0-计算机网络面试核心.md"
   ]
 }
