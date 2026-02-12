@@ -134,3 +134,43 @@ public class FairReentrantLock {
 
 ​
 ​
+
+### 常见场景题汇总
+
+#### [场景1：自定义同步器设计]
+**问题描述**：
+业务场景需要一个“两门闩”同步器（Binary Latch）：门闩只有开启和关闭两种状态。当门闩关闭时，所有尝试获取的线程都会阻塞；当门闩开启时，所有线程放行。与 `CountDownLatch` 不同的是，这个门闩可以被重复关闭和开启。请问如何基于 AQS 设计？
+
+**解答**：
+1.  **定义 State**：`state=0` 表示关闭（阻塞），`state=1` 表示开启（放行）。
+2.  **实现 tryAcquireShared**：
+    *   如果 `state == 1`，返回 1（成功）。
+    *   如果 `state == 0`，返回 -1（失败，进入等待队列）。
+3.  **实现 tryReleaseShared**：
+    *   设置 `state = 1`，并唤醒所有等待线程。
+    *   提供额外方法 `close()` 设置 `state = 0`。
+这是 AQS **共享模式**（Shared）的典型应用。
+
+#### [场景2：AQS 资源状态含义辨析]
+**问题描述**：
+面试官问：AQS 中的 `state` 变量在 `ReentrantLock`、`CountDownLatch` 和 `Semaphore` 中分别代表什么含义？如果让你实现一个类似于“王者荣耀五人组队”的逻辑（满5人才能开始），你会怎么用？
+
+**解答**：
+*   **含义**：
+    *   `ReentrantLock`：`state` = 锁重入次数（0表示无锁，1表示持有，>1表示重入）。
+    *   `CountDownLatch`：`state` = 剩余需要倒数的数量（计数器）。
+    *   `Semaphore`：`state` = 剩余可用许可证数量。
+*   **场景实现（五人组队）**：
+    *   使用 `CyclicBarrier`（基于 ReentrantLock + Condition）或 `CountDownLatch`。
+    *   若用 `CountDownLatch`：设置 `state = 5`。每个玩家准备好调用 `countDown()`。主线程调用 `await()` 等待 `state` 变为 0 后开始游戏。
+
+#### [场景3：排查线程堆积]
+**问题描述**：
+系统出现卡顿，怀疑是有大量线程在等待某把锁。除了 dump 线程栈外，如何在代码运行期实时监控这把锁的等待队列长度？
+
+**解答**：
+AQS（及其子类如 ReentrantLock）提供了监控方法（通常是 `final` 或 `public` 的）：
+1.  **`getQueueLength()`**：返回等待队列中的估计线程数。
+2.  **`hasQueuedThreads()`**：判断是否有线程在等待。
+3.  **`getOwner()`**（protected）：获取持有当前锁的线程（用于排查是谁拿了锁不释放）。
+在业务监控代码中，可以定时打印 `lock.getQueueLength()` 来触发报警。

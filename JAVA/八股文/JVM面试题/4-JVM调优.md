@@ -178,3 +178,52 @@ jmap -dump:format=b,file=heap pid
 假如是因为内存泄漏导致的 Full GC 频繁，可以通过分析堆内存 dump 文件找到内存泄漏的对象，再找到内存泄漏的代码位置。
 假如是因为长生命周期的对象进入到了老年代，要及时释放资源，比如说 ThreadLocal、数据库连接、IO 资源等。
 假如是因为 GC 参数配置不合理导致的 Full GC 频繁，可以通过调整 GC 参数来优化 GC 行为。或者直接更换更适合的 GC 收集器，如 G1、ZGC 等。
+
+### 常见场景题汇总
+
+#### [场景1：堆外内存泄漏（OOM Killer）]
+**问题描述**：
+Java 进程突然消失（被 OS 杀掉）。查看监控发现 Heap 内存使用率并不高，但进程的 RSS（物理内存占用）远大于 `-Xmx` 设定的值。这是怎么回事？
+
+**解答**：
+*   **原因**：**堆外内存（Off-Heap Memory）泄漏**。
+    *   **DirectByteBuffer**：Netty、NIO 程序大量使用堆外内存，如果回收不及时（依赖 Full GC 触发 Cleaner），会导致堆外内存暴涨。
+    *   **Native Code**：JNI 调用 C/C++ 代码申请的内存未释放。
+    *   **Thread Stack**：线程过多，每个线程占用 1MB（默认）栈空间。
+*   **排查**：
+    *   使用 `pmap -x <pid>` 查看内存映射。
+    *   监控 `java.nio.BufferPool` MBean。
+    *   使用 Google PerfTools (tcmalloc) 追踪 Native 内存。
+
+#### [场景2：无法创建本地线程]
+**问题描述**：
+应用报错 `java.lang.OutOfMemoryError: unable to create new native thread`。但是通过 `jmap -heap` 查看堆内存还有很多空闲。
+
+**解答**：
+*   **原因**：这是**线程数过多**或**操作系统限制**导致的。
+    *   JVM 创建线程需要向 OS 申请 Native 内存（Stack），如果内存不足或超过 ulimit 限制，就会报错。
+*   **解决**：
+    1.  **检查线程池**：是否创建了无界线程池（CachedThreadPool）导致线程数失控。
+    2.  **调整参数**：减小堆内存（`-Xmx`）给栈腾出空间，或减小单个线程栈大小（`-Xss`，如从 1M 减到 256k）。
+    3.  **OS 限制**：检查 `ulimit -u`（最大用户进程数）。
+
+#### [场景3：JIT 编译停止（CodeCache 满）]
+**问题描述**：
+服务刚启动时很快，运行几天后性能突然大幅下降，且不再恢复。重启后又变快。GC 日志正常。
+
+**解答**：
+*   **原因**：**CodeCache 满了**。
+    *   JIT 编译器（C1/C2）将热点字节码编译为本地机器码存放于 CodeCache。如果满了，JIT 就会停止工作，代码退化为解释执行，性能暴跌。
+*   **排查**：查看 `jstat -compiler <pid>` 确认编译失败次数。
+*   **解决**：增大 `-XX:ReservedCodeCacheSize`（默认通常是 240M，不够用）。
+
+#### [场景4：Finalizer 队列积压]
+**问题描述**：
+通过 MAT 分析堆快照，发现内存中充斥着大量的 `java.lang.ref.Finalizer` 对象。
+
+**解答**：
+*   **原因**：实现了 `finalize()` 方法的对象，在回收时必须先放入 ReferenceQueue，由低优先级的 Finalizer 线程执行 `finalize()` 后才能被回收。
+    *   如果对象创建速度 > Finalizer 线程处理速度，就会积压，最终 OOM。
+*   **解决**：
+    *   **彻底杜绝使用 `finalize()`**（JDK 9 已废弃）。
+    *   检查是否有第三方库使用了它且阻塞了 Finalizer 线程。
