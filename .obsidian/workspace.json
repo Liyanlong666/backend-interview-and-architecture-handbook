@@ -197,6 +197,7 @@
   },
   "active": "b3b9f58135b2d3b4",
   "lastOpenFiles": [
+    "JAVA/八股文/计算机网络/6-网络高频场景题.md",
     "JAVA/八股文/Redis/7-Redis高频场景题.md",
     "JAVA/八股文/MySQL/6-MySQL高频场景题.md",
     "JAVA/八股文/JUC面试题/8-JUC高频场景题.md",
@@ -241,7 +242,6 @@
     "JAVA/八股文/MySQL/事务与日志.md",
     "JAVA/八股文/MySQL/2-索引.md",
     "JAVA/八股文/MySQL/5-SQL优化.md",
-    "JAVA/八股文/MySQL/4-锁.md",
-    "JAVA/八股文/MySQL/1-MySQL基础.md"
+    "JAVA/八股文/MySQL/4-锁.md"
   ]
 }
