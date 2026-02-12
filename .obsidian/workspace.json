@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/大模型应用架构演进深度报告.md",
+                "file": "JAVA/八股文/MySQL/0-MySQL面试核心.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "大模型应用架构演进深度报告"
+              "title": "0-MySQL面试核心"
             }
           }
         ]
@@ -197,14 +197,14 @@
   },
   "active": "f32d951315166792",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/事务&日志/事务与日志详解.md",
+    "AI/大模型应用架构演进深度报告.md",
     "JAVA/八股文/MySQL/MySQL基础/MySQL基础详解.md",
     "JAVA/八股文/计算机网络/2-HTTP协议.md",
     "JAVA/八股文/计算机网络/1-网络分层模型.md",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
-    "AI/大模型应用架构演进深度报告.md",
     "Clippings/Gemini CLI 会话管理：自动保存和恢复你的 AI 对话上下文.md",
     "JAVA/八股文/MySQL/0-MySQL面试核心.md",
-    "JAVA/八股文/MySQL/事务&日志/事务详解.md",
     "JAVA/八股文/MySQL/索引/索引详解.md",
     "MySQL基础.md",
     "JAVA/八股文/MySQL/事务&日志/index.md",
