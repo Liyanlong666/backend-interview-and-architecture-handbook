@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/八股文/Redis/0-Redis面试核心.md",
+                "file": "JAVA/八股文/MySQL/0-MySQL面试核心.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0-Redis面试核心"
+              "title": "0-MySQL面试核心"
             }
           }
         ]
@@ -197,10 +197,16 @@
   },
   "active": "f32d951315166792",
   "lastOpenFiles": [
+    "JAVA/八股文/MySQL/_整理进度报告.md",
+    "JAVA/八股文/MySQL/5-SQL优化.md",
+    "JAVA/八股文/MySQL/4-锁.md",
+    "JAVA/八股文/MySQL/2-索引.md",
+    "JAVA/八股文/MySQL/1-MySQL基础.md",
+    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
+    "JAVA/八股文/Redis/0-Redis面试核心.md",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
     "JAVA/八股文/计算机网络/计算机网络.md",
     "JAVA/八股文/Redis/6-分布式锁总结.md",
-    "JAVA/八股文/MySQL/5-SQL优化.md",
     "JAVA/八股文/MySQL/assets/5-SQL优化/1756106256390-a77c8975-8abf-4bd4-89cc-727abea18aeb.png",
     "JAVA/八股文/MySQL/assets/5-SQL优化/1756106255974-b62c6fda-87c6-4242-af15-95cc7befcecf.png",
     "JAVA/八股文/MySQL/assets/5-SQL优化/1756106255683-79932170-ddb5-44ef-9371-2fa5f4b25969.png",
@@ -208,9 +214,6 @@
     "JAVA/八股文/MySQL/assets/5-SQL优化/1756106255428-50051ea3-b977-47c6-a8ca-c185a9070ca8.png",
     "JAVA/八股文/MySQL/assets/5-SQL优化/1756106255350-1ed0d03d-07cf-43c7-8944-05d8a1350016.png",
     "JAVA/八股文/MySQL/assets/5-SQL优化/1756106255229-dec7706d-1b17-4c3e-8b39-490ba2db3df9.png",
-    "JAVA/八股文/MySQL/4-锁.md",
-    "JAVA/八股文/MySQL/2-索引.md",
-    "JAVA/八股文/MySQL/1-MySQL基础.md",
     "JAVA/八股文/MySQL/assets/4-锁/1747623541841-c141d6f3-0d94-4235-8212-3c53e16c36ac.png",
     "JAVA/八股文/MySQL/assets/4-锁/1747623541637-6dcb9a74-14b8-4b7e-ab67-9c9db3476874.png",
     "JAVA/八股文/MySQL/assets/4-锁/1747623541507-fbe3f6d2-08ba-46d1-aa91-485f0d634057.png",
@@ -223,7 +226,6 @@
     "JAVA/八股文/Redis/5-分布式锁.md",
     "JAVA/八股文/Redis/4-缓存三件套.md",
     "JAVA/八股文/Redis/2-底层结构.md",
-    "JAVA/八股文/Redis/0-Redis面试核心.md",
     "JAVA/八股文/Redis/1-Redis基础.md",
     "JAVA/八股文/Redis/底层结构/底层结构.md",
     "JAVA/八股文/Redis/assets/4-缓存三件套",
@@ -239,9 +241,7 @@
     "JAVA/八股文/JVM面试题/index.md",
     "JAVA/八股文/JVM面试题/JVM基础.md",
     "JAVA/八股文/MySQL/MySQL基础/MySQL基础详解.md",
-    "JAVA/八股文/MySQL/0-MySQL面试核心.md",
     "JAVA/八股文/MySQL/事务&日志/事务与日志详解.md",
-    "JAVA/八股文/计算机网络/2-HTTP协议.md",
-    "JAVA/八股文/计算机网络/1-网络分层模型.md"
+    "JAVA/八股文/计算机网络/2-HTTP协议.md"
   ]
 }
