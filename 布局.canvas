@@ -1,0 +1,110 @@
+{
+  "nodes": [
+    {
+      "id": "a1b2c3d4e5f60718",
+      "type": "group",
+      "x": -80,
+      "y": -80,
+      "width": 1360,
+      "height": 920,
+      "label": "页面布局",
+      "color": "5"
+    },
+    {
+      "id": "b2c3d4e5f6071829",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 1200,
+      "height": 120,
+      "text": "# Header 头部\n\nLogo / 导航 / 搜索",
+      "color": "4"
+    },
+    {
+      "id": "c3d4e5f60718293a",
+      "type": "text",
+      "x": 0,
+      "y": 160,
+      "width": 220,
+      "height": 560,
+      "text": "# Sidebar 左侧栏\n\n- 菜单\n- 筛选\n- 快捷入口",
+      "color": "2"
+    },
+    {
+      "id": "d4e5f60718293a4b",
+      "type": "text",
+      "x": 260,
+      "y": 160,
+      "width": 640,
+      "height": 560,
+      "text": "# Main Content 主内容\n\n- 页面标题\n- 内容区\n- 卡片/图表/列表",
+      "color": "3"
+    },
+    {
+      "id": "e5f60718293a4b5c",
+      "type": "text",
+      "x": 940,
+      "y": 160,
+      "width": 260,
+      "height": 560,
+      "text": "# Aside 右侧栏\n\n- 通知\n- 辅助信息\n- 操作面板",
+      "color": "1"
+    },
+    {
+      "id": "f60718293a4b5c6d",
+      "type": "text",
+      "x": 0,
+      "y": 760,
+      "width": 1200,
+      "height": 80,
+      "text": "# Footer 底部\n\n版权 / 链接 / 备案",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "0718293a4b5c6d7e",
+      "fromNode": "b2c3d4e5f6071829",
+      "fromSide": "bottom",
+      "toNode": "c3d4e5f60718293a",
+      "toSide": "top"
+    },
+    {
+      "id": "18293a4b5c6d7e8f",
+      "fromNode": "b2c3d4e5f6071829",
+      "fromSide": "bottom",
+      "toNode": "d4e5f60718293a4b",
+      "toSide": "top"
+    },
+    {
+      "id": "293a4b5c6d7e8f90",
+      "fromNode": "b2c3d4e5f6071829",
+      "fromSide": "bottom",
+      "toNode": "e5f60718293a4b5c",
+      "toSide": "top"
+    },
+    {
+      "id": "3a4b5c6d7e8f9011",
+      "fromNode": "c3d4e5f60718293a",
+      "fromSide": "right",
+      "toNode": "d4e5f60718293a4b",
+      "toSide": "left",
+      "label": "导航驱动"
+    },
+    {
+      "id": "4b5c6d7e8f901122",
+      "fromNode": "d4e5f60718293a4b",
+      "fromSide": "right",
+      "toNode": "e5f60718293a4b5c",
+      "toSide": "left",
+      "label": "状态联动"
+    },
+    {
+      "id": "5c6d7e8f90112233",
+      "fromNode": "d4e5f60718293a4b",
+      "fromSide": "bottom",
+      "toNode": "f60718293a4b5c6d",
+      "toSide": "top"
+    }
+  ]
+}
