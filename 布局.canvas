@@ -1,18 +1,22 @@
 {
 	"nodes":[
-		{"id":"a1b2c3d4e5f60718","type":"group","x":-80,"y":-80,"width":1360,"height":920,"color":"5","label":"页面布局"},
-		{"id":"b2c3d4e5f6071829","type":"text","text":"# Header 头部\n\nLogo / 导航 / 搜索","x":0,"y":0,"width":1200,"height":120,"color":"4"},
-		{"id":"c3d4e5f60718293a","type":"text","text":"# Sidebar 左侧栏\n\n- 菜单\n- 筛选\n- 快捷入口","x":0,"y":160,"width":220,"height":560,"color":"2"},
-		{"id":"d4e5f60718293a4b","type":"text","text":"# Main Content 主内容\n\n- 页面标题\n- 内容区\n- 卡片/图表/列表","x":260,"y":160,"width":640,"height":560,"color":"3"},
-		{"id":"e5f60718293a4b5c","type":"text","text":"# Aside 右侧栏\n\n- 通知\n- 辅助信息\n- 操作面板","x":940,"y":160,"width":260,"height":560,"color":"1"},
-		{"id":"f60718293a4b5c6d","type":"text","text":"# Footer 底部\n\n版权 / 链接 / 备案","x":0,"y":760,"width":1200,"height":80,"color":"6"}
+		{"id":"aa10bb20cc30dd40","type":"group","x":-100,"y":-100,"width":900,"height":820,"label":"结构区","color":"5"},
+		{"id":"ee50ff60aa70bb80","type":"group","x":840,"y":-100,"width":760,"height":820,"label":"资源区","color":"2"},
+		{"id":"c111d222e333f444","type":"text","x":0,"y":0,"width":700,"height":110,"text":"# Header\n\n品牌 / 导航 / 搜索","color":"4"},
+		{"id":"a555b666c777d888","type":"text","x":0,"y":150,"width":180,"height":430,"text":"# Sidebar\n\n- 菜单\n- 分类\n- 筛选","color":"1"},
+		{"id":"e999f000a111b222","type":"text","x":220,"y":150,"width":480,"height":430,"text":"# Main\n\n- 标题\n- 内容卡片\n- 图表/列表","color":"3"},
+		{"id":"c333d444e555f666","type":"text","x":0,"y":620,"width":700,"height":80,"text":"# Footer\n\n版权 / 友情链接 / 联系方式","color":"6"},
+		{"id":"a777b888c999d000","type":"file","x":940,"y":20,"width":560,"height":160,"file":"README.md"},
+		{"id":"e111f222a333b444","type":"link","x":940,"y":220,"width":560,"height":140,"url":"https://jsoncanvas.org/spec/1.0/"},
+		{"id":"c555d666e777f888","type":"text","x":940,"y":400,"width":560,"height":300,"text":"# Notes\n\n- 这里放设计说明\n- 这里放后续待办\n- 这里放验收标准"}
 	],
 	"edges":[
-		{"id":"0718293a4b5c6d7e","fromNode":"b2c3d4e5f6071829","fromSide":"bottom","toNode":"c3d4e5f60718293a","toSide":"top"},
-		{"id":"18293a4b5c6d7e8f","fromNode":"b2c3d4e5f6071829","fromSide":"bottom","toNode":"d4e5f60718293a4b","toSide":"top"},
-		{"id":"293a4b5c6d7e8f90","fromNode":"b2c3d4e5f6071829","fromSide":"bottom","toNode":"e5f60718293a4b5c","toSide":"top"},
-		{"id":"3a4b5c6d7e8f9011","fromNode":"c3d4e5f60718293a","fromSide":"right","toNode":"d4e5f60718293a4b","toSide":"left","label":"导航驱动"},
-		{"id":"4b5c6d7e8f901122","fromNode":"d4e5f60718293a4b","fromSide":"right","toNode":"e5f60718293a4b5c","toSide":"left","label":"状态联动"},
-		{"id":"5c6d7e8f90112233","fromNode":"d4e5f60718293a4b","fromSide":"bottom","toNode":"f60718293a4b5c6d","toSide":"top"}
+		{"id":"1011121314151617","fromNode":"c111d222e333f444","fromSide":"bottom","toNode":"a555b666c777d888","toSide":"top"},
+		{"id":"18191a1b1c1d1e1f","fromNode":"c111d222e333f444","fromSide":"bottom","toNode":"e999f000a111b222","toSide":"top"},
+		{"id":"2021222324252627","fromNode":"a555b666c777d888","fromSide":"right","toNode":"e999f000a111b222","toSide":"left","label":"导航影响内容"},
+		{"id":"28292a2b2c2d2e2f","fromNode":"e999f000a111b222","fromSide":"bottom","toNode":"c333d444e555f666","toSide":"top"},
+		{"id":"3031323334353637","fromNode":"e999f000a111b222","fromSide":"right","toNode":"a777b888c999d000","toSide":"left","label":"参考文件"},
+		{"id":"38393a3b3c3d3e3f","fromNode":"a777b888c999d000","fromSide":"bottom","toNode":"e111f222a333b444","toSide":"top","label":"规范链接"},
+		{"id":"4041424344454647","fromNode":"e111f222a333b444","fromSide":"bottom","toNode":"c555d666e777f888","toSide":"top"}
 	]
 }

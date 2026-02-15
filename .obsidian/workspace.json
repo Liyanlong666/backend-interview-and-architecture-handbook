@@ -15,9 +15,9 @@
               "state": {
                 "file": "布局.canvas",
                 "viewState": {
-                  "x": 600,
-                  "y": 177.8146850585937,
-                  "zoom": 0
+                  "x": 750,
+                  "y": 310,
+                  "zoom": -0.1341129345491609
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -200,8 +200,9 @@
   },
   "active": "f32d951315166792",
   "lastOpenFiles": [
-    "JAVA/非算法类 手撕/非算法类 手撕.md",
+    "GEMINI.md",
     "布局.canvas",
+    "JAVA/非算法类 手撕/非算法类 手撕.md",
     "JAVA/八股文/计算机网络/1-网络分层模型.md",
     "JAVA/八股文/计算机网络/0-计算机网络面试核心.md",
     "README.md",
@@ -245,7 +246,6 @@
     "JAVA/八股文/MySQL/_整理进度报告.md",
     "JAVA/八股文/JVM面试题/assets/5-JVM牛客面经八股",
     "JAVA/八股文/JVM面试题/assets/4-JVM调优",
-    "JAVA/八股文/JVM面试题/assets/3-类加载机制",
-    "JAVA/八股文/MySQL/0-MySQL面试核心.md"
+    "JAVA/八股文/JVM面试题/assets/3-类加载机制"
   ]
 }
