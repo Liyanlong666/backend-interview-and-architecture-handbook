@@ -1,6 +1,6 @@
-# My Obsidian Repository
+# 后端八股与架构手册
 
-> 📚 个人知识库 - Java 后端开发、面试八股文、技术深度学习笔记
+> 📚 后端八股与架构手册 - Java 后端开发、面试八股文、技术深度学习笔记
 
 ## 📖 概览
 
@@ -78,7 +78,7 @@
 
 ```bash
 # 设置默认 vault
-obsidian-cli set-default "My-Obsidian-Repository"
+obsidian-cli set-default "后端八股与架构手册"
 
 # 搜索笔记
 obsidian-cli search "Redis"
