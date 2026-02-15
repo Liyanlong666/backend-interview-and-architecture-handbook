@@ -11,17 +11,14 @@
             "id": "f32d951315166792",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "布局.canvas",
-                "viewState": {
-                  "x": 750,
-                  "y": 310,
-                  "zoom": -0.1341129345491609
-                }
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "布局"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -243,7 +240,6 @@
     "JAVA/八股文/JVM面试题/1-JVM基础.md",
     "JAVA/八股文/JVM面试题/0-JVM面试核心.md",
     "JAVA/八股文/MySQL/3-事务与日志.md",
-    "JAVA/八股文/MySQL/_整理进度报告.md",
     "JAVA/八股文/JVM面试题/assets/5-JVM牛客面经八股",
     "JAVA/八股文/JVM面试题/assets/4-JVM调优",
     "JAVA/八股文/JVM面试题/assets/3-类加载机制"
